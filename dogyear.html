@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>
+    Dog Years
+    </title>
+    <script language = "JavaScript">
+      function dog(form) {
+        form.DogYears.value = form.HumanYears.value/7;
+      }
+      function human(form) {
+        form.HumanYear.value=form.DogYear.value*7;
+      }
+    </script>
+  </head>
+
+  <body>
+      <center>
+        <form>
+          How old are you?
+          <input type = "text" name = "HumanYears" size = 15>
+            <br/>
+          <input type = "button" value = "Calculate" onclick = "dog(this.form)">
+          <br/>
+          <p>
+          You are:
+          <input type = "text" name = "DogYears" size = 15>
+          in dog years.
+          <br/>
+          <br/>
+          How old is your dog?
+          <input type = "text" name = "DogYear" size = 15>
+          <br/>
+          <input type = "button" value = "Calculate" onclick = "human(this.form)">
+          <br/>
+          <p>
+          Your dog is:
+          <input type = "text" name = "HumanYear" size = 15>
+          in human years.
+          </p>
+        </form>
+      </center>
+  </body>
+
+</html>
